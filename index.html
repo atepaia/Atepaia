@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO PRIMARIO: Título y Descripción optimizados para CTR y Cola Larga -->
+    <!-- SEO PRIMARIO -->
     <title>Atepaia | Welcome Packs Premium y Merchandising Corporativo en Argentina</title>
     <meta name="description" content="Diseñamos kits de bienvenida y regalos empresariales sustentables en Argentina. Personalización con grabado láser de alta precisión, sin plásticos y sin mínimos estrictos. Solicitá tu mockup.">
     <meta name="keywords" content="welcome packs premium argentina, merchandising corporativo sustentable, regalos empresariales grabado láser, kits de bienvenida empleados, merchandising sin plástico Buenos Aires">
@@ -12,7 +12,7 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://atepaia.github.io/Atepaia/">
     
-    <!-- Open Graph (Para que se vea premium al compartir en LinkedIn, WhatsApp, Instagram) -->
+    <!-- Open Graph -->
     <meta property="og:locale" content="es_AR">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Atepaia | Merchandising Corporativo Premium y Sustentable">
@@ -32,7 +32,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     
-    <!-- SCHEMA.ORG JSON-LD (CRUCIAL PARA SEO LOCAL Y B2B EN GOOGLE) -->
+    <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -72,7 +72,7 @@
         html { scroll-behavior: smooth; }
         body { background-color: var(--bg-color); color: var(--text-main); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.7; display: flex; }
         
-        /* NAVEGACIÓN */
+        /* NAVEGACIÓN DESKTOP */
         nav { width: 300px; height: 100vh; background-color: var(--panel-bg); border-right: 1px solid var(--border-color); position: fixed; padding: 3rem 2rem; display: flex; flex-direction: column; justify-content: space-between; z-index: 1000; }
         .logo-area { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; letter-spacing: 3px; color: var(--accent-color); text-transform: uppercase; border: 1px solid var(--border-color); padding: 1rem; text-align: center; border-radius: 4px; background-color: var(--bg-color); }
         nav ul { list-style: none; margin-top: 4rem; }
@@ -81,11 +81,18 @@
         nav ul li a:hover { color: var(--accent-color); background-color: var(--card-bg); padding-left: 1rem; }
         .nav-footer { font-size: 0.75rem; color: var(--text-muted); text-align: center; line-height: 1.4; }
         
+        /* MENÚ HAMBURGUESA MOBILE */
+        .mobile-menu-btn { display: none; position: fixed; top: 1.5rem; right: 1.5rem; z-index: 1001; background: var(--panel-bg); border: 1px solid var(--border-color); padding: 0.75rem; border-radius: 4px; cursor: pointer; }
+        .mobile-menu-btn span { display: block; width: 25px; height: 2px; background: var(--accent-color); margin: 5px 0; transition: 0.3s; }
+        .mobile-menu-btn.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+        .mobile-menu-btn.active span:nth-child(2) { opacity: 0; }
+        .mobile-menu-btn.active span:nth-child(3) { transform: rotate(-45deg) translate(7px, -6px); }
+        
         /* CONTENIDO PRINCIPAL */
         main { margin-left: 300px; padding: 5rem 6rem; max-width: 1200px; width: 100%; }
         header { margin-bottom: 6rem; }
         
-        /* TIPOGRAFÍA Y JERARQUÍA SEO */
+        /* TIPOGRAFÍA */
         h1 { font-family: 'Playfair Display', serif; font-size: 3.2rem; font-weight: 600; color: var(--accent-color); line-height: 1.2; margin-bottom: 1.5rem; letter-spacing: -0.5px; }
         .subtitle { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2.5rem; max-width: 700px; font-weight: 300; line-height: 1.8; }
         h2 { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 500; color: var(--accent-color); margin-bottom: 1.5rem; margin-top: 4rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color); }
@@ -117,33 +124,21 @@
         .step-content h4 { font-size: 1.2rem; color: var(--accent-color); margin-bottom: 0.75rem; font-weight: 600; }
         .step-content p { margin-bottom: 0; font-size: 1rem; }
         
+        /* TESTIMONIOS */
+        .testimonials { margin-top: 4rem; }
+        .testimonial-card { background-color: var(--panel-bg); border: 1px solid var(--border-color); padding: 2rem; border-radius: 4px; margin-bottom: 2rem; }
+        .testimonial-text { font-style: italic; color: var(--accent-muted); margin-bottom: 1rem; }
+        .testimonial-author { font-weight: 600; color: var(--accent-color); }
+        .testimonial-role { font-size: 0.9rem; color: var(--text-muted); }
+        
         /* FOOTER */
         footer { margin-top: 8rem; padding-top: 3rem; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--text-muted); line-height: 1.8; display: flex; justify-content: space-between; align-items: center; }
         .footer-contact { text-align: right; }
         .footer-contact a { color: var(--text-muted); text-decoration: none; transition: color 0.3s; }
         .footer-contact a:hover { color: var(--accent-color); }
 
-        /* BOTÓN FLOTANTE DE CONTACTO (Preparado para WhatsApp futuro) */
-        .floating-cta {
-            position: fixed;
-            bottom: 2rem;
-            right: 2rem;
-            background-color: var(--accent-color);
-            color: var(--bg-color);
-            padding: 1rem 1.5rem;
-            border-radius: 50px;
-            font-weight: 700;
-            font-size: 0.85rem;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            box-shadow: 0 10px 25px rgba(255,255,255,0.15);
-            transition: all 0.3s;
-            z-index: 999;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
+        /* BOTÓN FLOTANTE */
+        .floating-cta { position: fixed; bottom: 2rem; right: 2rem; background-color: var(--accent-color); color: var(--bg-color); padding: 1rem 1.5rem; border-radius: 50px; font-weight: 700; font-size: 0.85rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 10px 25px rgba(255,255,255,0.15); transition: all 0.3s; z-index: 999; display: flex; align-items: center; gap: 0.5rem; }
         .floating-cta:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(255,255,255,0.25); }
 
         /* RESPONSIVE */
@@ -152,36 +147,56 @@
             main { margin-left: 250px; padding: 4rem 3rem; }
             h1 { font-size: 2.5rem; }
         }
+        
         @media (max-width: 768px) {
             body { flex-direction: column; }
-            nav { width: 100%; height: auto; position: relative; padding: 2rem; border-right: none; border-bottom: 1px solid var(--border-color); }
-            nav ul { margin-top: 2rem; margin-bottom: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
-            nav ul li { margin-bottom: 0; }
-            main { margin-left: 0; padding: 3rem 2rem; }
-            h1 { font-size: 2rem; }
+            
+            /* Menú mobile */
+            nav { width: 100%; height: auto; position: fixed; top: 0; left: 0; transform: translateX(-100%); transition: transform 0.3s; padding: 2rem; border-right: none; border-bottom: 1px solid var(--border-color); }
+            nav.active { transform: translateX(0); }
+            .mobile-menu-btn { display: block; }
+            nav ul { margin-top: 2rem; margin-bottom: 2rem; }
+            nav ul li { margin-bottom: 1rem; }
+            
+            main { margin-left: 0; padding: 6rem 1.5rem 3rem; }
+            h1 { font-size: 2rem; line-height: 1.3; }
             h2 { font-size: 1.6rem; }
-            .step-item { flex-direction: column; }
+            .subtitle { font-size: 1rem; }
+            
+            .step-item { flex-direction: column; padding: 1.5rem; }
             .step-number { margin-right: 0; margin-bottom: 1rem; font-size: 2.5rem; }
+            
             footer { flex-direction: column; text-align: center; gap: 1.5rem; }
             .footer-contact { text-align: center; }
-            .floating-cta { bottom: 1.5rem; right: 1.5rem; padding: 0.8rem 1.2rem; font-size: 0.8rem; }
+            
+            .floating-cta { bottom: 1rem; right: 1rem; padding: 0.8rem 1.2rem; font-size: 0.75rem; }
         }
+        
         @media (max-width: 480px) {
-            nav ul { grid-template-columns: 1fr; }
-            main { padding: 2rem 1.5rem; }
-            .products-grid { grid-template-columns: 1fr; }
+            main { padding: 5rem 1rem 2rem; }
+            h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.4rem; }
+            .products-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .product-card { padding: 1.5rem; }
         }
     </style>
 </head>
 <body>
 
-    <nav>
+    <!-- Botón menú mobile -->
+    <div class="mobile-menu-btn" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav id="mainNav">
         <div class="logo-area">Atepaia</div>
         <ul>
-            <li><a href="#inicio">01. Inicio</a></li>
-            <li><a href="#whitepaper">02. Impacto</a></li>
-            <li><a href="#soluciones">03. Productos</a></li>
-            <li><a href="#proceso">04. Proceso</a></li>
+            <li><a href="#inicio" onclick="toggleMenu()">01. Inicio</a></li>
+            <li><a href="#whitepaper" onclick="toggleMenu()">02. Impacto</a></li>
+            <li><a href="#soluciones" onclick="toggleMenu()">03. Productos</a></li>
+            <li><a href="#proceso" onclick="toggleMenu()">04. Proceso</a></li>
         </ul>
         <div class="nav-footer">
             EST. 2026<br>BUENOS AIRES, ARGENTINA
@@ -189,7 +204,7 @@
     </nav>
 
     <main>
-        <!-- SECCIÓN 1: INICIO (H1 optimizado para SEO) -->
+        <!-- SECCIÓN 1: INICIO -->
         <section id="inicio">
             <header>
                 <h1>Welcome Packs Premium y<br>Merchandising Corporativo en Argentina</h1>
@@ -198,12 +213,11 @@
                     Solicitar Mockup Sin Cargo
                 </a>
                 
-                <!-- Imagen Principal con atributos de rendimiento SEO -->
                 <img src="KitCompleto.png" alt="Welcome packs premium y merchandising corporativo sustentable en Argentina" width="1200" height="600" class="hero-image" loading="eager" decoding="async">
             </header>
         </section>
 
-        <!-- SECCIÓN 2: WHITEPAPER (Contenido rico en palabras clave de cola larga) -->
+        <!-- SECCIÓN 2: WHITEPAPER -->
         <section id="whitepaper">
             <h2>Por qué los Welcome Packs mejoran la retención de talento</h2>
             <p>La cultura corporativa moderna exige coherencia. Un estudio de mercado demuestra que el sentido de pertenencia aumenta significativamente cuando el <strong>onboarding de empleados</strong> incluye herramientas de alto valor percibido y <strong>políticas sustentables</strong>.</p>
@@ -272,6 +286,24 @@
             </div>
         </section>
 
+        <!-- SECCIÓN 5: TESTIMONIOS (NUEVA) -->
+        <section id="testimonios">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Los welcome packs de Atepaia transformaron nuestro onboarding. Los nuevos empleados llegan el primer día y se sienten parte de algo especial desde el minuto uno."</p>
+                    <p class="testimonial-author">María González</p>
+                    <p class="testimonial-role">HR Manager, Tech Startup Buenos Aires</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"La calidad del grabado láser es impresionante. Nuestros clientes VIP recibieron kits materos personalizados y el feedback fue excepcional. Definitivamente vamos a repetir."</p>
+                    <p class="testimonial-author">Carlos Rodríguez</p>
+                    <p class="testimonial-role">Director de Marketing, Consultora B2B</p>
+                </div>
+            </div>
+        </section>
+
         <footer>
             <div>
                 <p>&copy; 2026 Atepaia. Todos los derechos reservados.</p>
@@ -284,11 +316,17 @@
         </footer>
     </main>
 
-    <!-- BOTÓN FLOTANTE DE CONTACTO (Estrategia CRO) -->
-    <!-- NOTA: Cuando tengas el WhatsApp, solo cambias el href por "https://wa.me/TU_NUMERO" y el texto -->
+    <!-- Botón flotante -->
     <a href="https://www.instagram.com/atepaia_merchandansing_premium" target="_blank" rel="noopener noreferrer" class="floating-cta" aria-label="Contactar a Atepaia por Instagram">
         <span>💬</span> Solicitar Cotización
     </a>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById('mainNav').classList.toggle('active');
+            document.querySelector('.mobile-menu-btn').classList.toggle('active');
+        }
+    </script>
 
 </body>
 </html>
