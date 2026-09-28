@@ -1,22 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-AR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atepaia | Regalos Empresariales Premium y Welcome Packs</title>
-    <meta name="description" content="Agencia de merchandising corporativo premium on-demand en Buenos Aires. Kits de bienvenida y regalos empresariales personalizados con grabado láser y sin mínimos estrictos.">
     
-    <!-- Open Graph para redes sociales -->
-    <meta property="og:title" content="Atepaia | Merchandising Corporativo Premium">
-    <meta property="og:description" content="Objetos nobles de alta calidad que tus empleados y clientes van a querer conservar.">
+    <!-- SEO PRIMARIO: Título y Descripción optimizados para CTR y Cola Larga -->
+    <title>Atepaia | Welcome Packs Premium y Merchandising Corporativo en Argentina</title>
+    <meta name="description" content="Diseñamos kits de bienvenida y regalos empresariales sustentables en Argentina. Personalización con grabado láser de alta precisión, sin plásticos y sin mínimos estrictos. Solicitá tu mockup.">
+    <meta name="keywords" content="welcome packs premium argentina, merchandising corporativo sustentable, regalos empresariales grabado láser, kits de bienvenida empleados, merchandising sin plástico Buenos Aires">
+    <meta name="author" content="Atepaia">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://atepaia.github.io/Atepaia/">
+    
+    <!-- Open Graph (Para que se vea premium al compartir en LinkedIn, WhatsApp, Instagram) -->
+    <meta property="og:locale" content="es_AR">
     <meta property="og:type" content="website">
+    <meta property="og:title" content="Atepaia | Merchandising Corporativo Premium y Sustentable">
+    <meta property="og:description" content="Objetos nobles de alta calidad con grabado láser. Eliminamos el plástico descartable de los welcome packs en Argentina.">
     <meta property="og:url" content="https://atepaia.github.io/Atepaia/">
+    <meta property="og:site_name" content="Atepaia">
+    <meta property="og:image" content="https://atepaia.github.io/Atepaia/KitCompleto.png">
     
-    <!-- Google Fonts - CORREGIDO -->
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Atepaia | Welcome Packs Premium Argentina">
+    <meta name="twitter:description" content="Merchandising corporativo de alta calidad, sustentable y con grabado láser.">
+    <meta name="twitter:image" content="https://atepaia.github.io/Atepaia/KitCompleto.png">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     
+    <!-- SCHEMA.ORG JSON-LD (CRUCIAL PARA SEO LOCAL Y B2B EN GOOGLE) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Atepaia",
+      "url": "https://atepaia.github.io/Atepaia/",
+      "logo": "https://atepaia.github.io/Atepaia/KitCompleto.png",
+      "description": "Agencia de merchandising corporativo premium y welcome packs on-demand en Argentina, enfocada en materiales sustentables y grabado láser.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Buenos Aires",
+        "addressCountry": "AR"
+      },
+      "areaServed": "Argentina",
+      "knowsAbout": ["Merchandising Corporativo", "Welcome Packs", "Grabado Láser", "Regalos Empresariales Sustentables"],
+      "sameAs": [
+        "https://www.instagram.com/atepaia_merchandansing_premium"
+      ]
+    }
+    </script>
+
     <style>
         :root {
             --bg-color: #0b0b0c;
@@ -27,362 +64,112 @@
             --text-muted: #a1a1aa;
             --border-color: #27272a;
             --card-bg: #18181b;
+            --cta-color: #ffffff;
+            --cta-text: #0b0b0c;
         }
         
-        * { 
-            box-sizing: border-box; 
-            margin: 0; 
-            padding: 0; 
-        }
-        
-        html { 
-            scroll-behavior: smooth; 
-        }
-        
-        body { 
-            background-color: var(--bg-color); 
-            color: var(--text-main); 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            line-height: 1.7; 
-            display: flex; 
-        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { background-color: var(--bg-color); color: var(--text-main); font-family: 'Plus Jakarta Sans', sans-serif; line-height: 1.7; display: flex; }
         
         /* NAVEGACIÓN */
-        nav { 
-            width: 300px; 
-            height: 100vh; 
-            background-color: var(--panel-bg); 
-            border-right: 1px solid var(--border-color); 
-            position: fixed; 
-            padding: 3rem 2rem; 
-            display: flex; 
-            flex-direction: column; 
-            justify-content: space-between;
-            z-index: 1000;
-        }
-        
-        .logo-area { 
-            font-family: 'Playfair Display', serif; 
-            font-size: 1.8rem; 
-            font-weight: 700; 
-            letter-spacing: 3px; 
-            color: var(--accent-color); 
-            text-transform: uppercase; 
-            border: 1px solid var(--border-color); 
-            padding: 1rem; 
-            text-align: center; 
-            border-radius: 4px; 
-            background-color: var(--bg-color);
-        }
-        
-        nav ul { 
-            list-style: none; 
-            margin-top: 4rem; 
-        }
-        
-        nav ul li { 
-            margin-bottom: 1.5rem; 
-        }
-        
-        nav ul li a { 
-            color: var(--text-muted); 
-            text-decoration: none; 
-            font-size: 0.9rem; 
-            font-weight: 500; 
-            transition: all 0.3s; 
-            display: block; 
-            padding: 0.5rem; 
-            border-radius: 4px; 
-        }
-        
-        nav ul li a:hover { 
-            color: var(--accent-color); 
-            background-color: var(--card-bg); 
-            padding-left: 1rem; 
-        }
-        
-        .nav-footer { 
-            font-size: 0.75rem; 
-            color: var(--text-muted); 
-            text-align: center; 
-            line-height: 1.4; 
-        }
+        nav { width: 300px; height: 100vh; background-color: var(--panel-bg); border-right: 1px solid var(--border-color); position: fixed; padding: 3rem 2rem; display: flex; flex-direction: column; justify-content: space-between; z-index: 1000; }
+        .logo-area { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; letter-spacing: 3px; color: var(--accent-color); text-transform: uppercase; border: 1px solid var(--border-color); padding: 1rem; text-align: center; border-radius: 4px; background-color: var(--bg-color); }
+        nav ul { list-style: none; margin-top: 4rem; }
+        nav ul li { margin-bottom: 1.5rem; }
+        nav ul li a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: all 0.3s; display: block; padding: 0.5rem; border-radius: 4px; }
+        nav ul li a:hover { color: var(--accent-color); background-color: var(--card-bg); padding-left: 1rem; }
+        .nav-footer { font-size: 0.75rem; color: var(--text-muted); text-align: center; line-height: 1.4; }
         
         /* CONTENIDO PRINCIPAL */
-        main { 
-            margin-left: 300px; 
-            padding: 5rem 6rem; 
-            max-width: 1200px; 
-            width: 100%; 
-        }
+        main { margin-left: 300px; padding: 5rem 6rem; max-width: 1200px; width: 100%; }
+        header { margin-bottom: 6rem; }
         
-        /* HEADER / HERO */
-        header { 
-            margin-bottom: 6rem; 
-        }
+        /* TIPOGRAFÍA Y JERARQUÍA SEO */
+        h1 { font-family: 'Playfair Display', serif; font-size: 3.2rem; font-weight: 600; color: var(--accent-color); line-height: 1.2; margin-bottom: 1.5rem; letter-spacing: -0.5px; }
+        .subtitle { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2.5rem; max-width: 700px; font-weight: 300; line-height: 1.8; }
+        h2 { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 500; color: var(--accent-color); margin-bottom: 1.5rem; margin-top: 4rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border-color); }
+        h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; color: var(--accent-color); margin-bottom: 1rem; }
+        p { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 1.5rem; font-weight: 400; max-width: 800px; }
         
-        h1 { 
-            font-family: 'Playfair Display', serif; 
-            font-size: 3.2rem; 
-            font-weight: 600; 
-            color: var(--accent-color); 
-            line-height: 1.2; 
-            margin-bottom: 2rem; 
-            letter-spacing: -0.5px; 
-        }
+        /* CTA PRINCIPAL */
+        .cta-button { display: inline-flex; align-items: center; gap: 0.5rem; background-color: var(--cta-color); color: var(--cta-text); padding: 1rem 2.5rem; font-weight: 700; text-decoration: none; border-radius: 2px; letter-spacing: 1px; text-transform: uppercase; font-size: 0.85rem; transition: all 0.3s; border: 1px solid var(--cta-color); margin-bottom: 3rem; }
+        .cta-button:hover { background-color: transparent; color: var(--cta-color); }
         
-        .subtitle { 
-            font-size: 1.2rem; 
-            color: var(--text-muted); 
-            margin-bottom: 2.5rem; 
-            max-width: 700px; 
-            font-weight: 300; 
-            line-height: 1.8;
-        }
-        
-        .cta-button { 
-            display: inline-block; 
-            background-color: var(--accent-color); 
-            color: var(--bg-color); 
-            padding: 1rem 2.5rem; 
-            font-weight: 700; 
-            text-decoration: none; 
-            border-radius: 2px; 
-            letter-spacing: 1px; 
-            text-transform: uppercase; 
-            font-size: 0.85rem; 
-            transition: all 0.3s; 
-            border: 1px solid var(--accent-color);
-            margin-bottom: 3rem;
-        }
-        
-        .cta-button:hover { 
-            background-color: transparent; 
-            color: var(--accent-color); 
-        }
-        
-        .hero-image {
-            width: 100%; 
-            height: auto; 
-            border-radius: 4px; 
-            border: 1px solid var(--border-color); 
-            margin-top: 2rem;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
+        .hero-image { width: 100%; height: auto; border-radius: 4px; border: 1px solid var(--border-color); margin-top: 2rem; box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
         
         /* SECCIONES */
-        section {
-            margin-bottom: 4rem;
-        }
-        
-        h2 { 
-            font-family: 'Playfair Display', serif; 
-            font-size: 2rem; 
-            font-weight: 500; 
-            color: var(--accent-color); 
-            margin-bottom: 2rem; 
-            margin-top: 4rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--border-color);
-        }
-        
-        p { 
-            color: var(--text-muted); 
-            font-size: 1.05rem; 
-            margin-bottom: 1.5rem; 
-            font-weight: 400;
-            max-width: 800px;
-        }
-        
-        .highlight-box { 
-            background-color: var(--panel-bg); 
-            border-left: 3px solid var(--accent-color); 
-            padding: 2rem; 
-            margin: 3rem 0; 
-            font-style: italic; 
-            font-size: 1.1rem; 
-            color: var(--accent-muted);
-            border-radius: 0 4px 4px 0;
-        }
+        section { margin-bottom: 4rem; scroll-margin-top: 2rem; }
+        .highlight-box { background-color: var(--panel-bg); border-left: 3px solid var(--accent-color); padding: 2rem; margin: 3rem 0; font-style: italic; font-size: 1.1rem; color: var(--accent-muted); border-radius: 0 4px 4px 0; }
         
         /* PRODUCTOS */
-        .products-grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 2.5rem; 
-            margin-top: 2rem; 
-        }
-        
-        .product-card { 
-            background-color: var(--panel-bg); 
-            border: 1px solid var(--border-color); 
-            padding: 2rem; 
-            border-radius: 4px; 
-            transition: all 0.3s; 
-        }
-        
-        .product-card:hover { 
-            border-color: var(--accent-muted); 
-            transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-        }
-        
-        .product-card h3 { 
-            font-family: 'Playfair Display', serif; 
-            font-size: 1.4rem; 
-            color: var(--accent-color); 
-            margin-bottom: 1rem; 
-        }
-        
-        .product-image { 
-            width: 100%; 
-            height: 280px; 
-            object-fit: cover; 
-            border-radius: 2px; 
-            margin-bottom: 1.5rem; 
-            opacity: 0.95; 
-            border: 1px solid var(--border-color);
-        }
-        
-        .product-description {
-            font-size: 0.95rem;
-            line-height: 1.6;
-        }
+        .products-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; margin-top: 2rem; }
+        .product-card { background-color: var(--panel-bg); border: 1px solid var(--border-color); padding: 2rem; border-radius: 4px; transition: all 0.3s; }
+        .product-card:hover { border-color: var(--accent-muted); transform: translateY(-5px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .product-image { width: 100%; height: 280px; object-fit: cover; border-radius: 2px; margin-bottom: 1.5rem; opacity: 0.95; border: 1px solid var(--border-color); }
+        .product-description { font-size: 0.95rem; line-height: 1.6; }
         
         /* PROCESO */
-        .steps-container { 
-            margin-top: 3rem; 
-        }
-        
-        .step-item { 
-            display: flex; 
-            margin-bottom: 2.5rem; 
-            background-color: var(--panel-bg); 
-            padding: 2.5rem; 
-            border-radius: 4px; 
-            border: 1px solid var(--border-color);
-            transition: all 0.3s;
-        }
-        
-        .step-item:hover {
-            border-color: var(--accent-muted);
-        }
-        
-        .step-number { 
-            font-family: 'Playfair Display', serif; 
-            font-size: 3rem; 
-            font-weight: 700; 
-            color: var(--text-muted); 
-            margin-right: 2.5rem; 
-            line-height: 1; 
-            opacity: 0.4;
-            min-width: 60px;
-        }
-        
-        .step-content h4 { 
-            font-size: 1.2rem; 
-            color: var(--accent-color); 
-            margin-bottom: 0.75rem;
-            font-weight: 600;
-        }
-        
-        .step-content p {
-            margin-bottom: 0;
-            font-size: 1rem;
-        }
+        .steps-container { margin-top: 3rem; }
+        .step-item { display: flex; margin-bottom: 2.5rem; background-color: var(--panel-bg); padding: 2.5rem; border-radius: 4px; border: 1px solid var(--border-color); transition: all 0.3s; }
+        .step-item:hover { border-color: var(--accent-muted); }
+        .step-number { font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 700; color: var(--text-muted); margin-right: 2.5rem; line-height: 1; opacity: 0.4; min-width: 60px; }
+        .step-content h4 { font-size: 1.2rem; color: var(--accent-color); margin-bottom: 0.75rem; font-weight: 600; }
+        .step-content p { margin-bottom: 0; font-size: 1rem; }
         
         /* FOOTER */
-        footer { 
-            margin-top: 8rem; 
-            padding-top: 3rem; 
-            border-top: 1px solid var(--border-color); 
-            font-size: 0.85rem; 
-            color: var(--text-muted); 
-            line-height: 1.8;
+        footer { margin-top: 8rem; padding-top: 3rem; border-top: 1px solid var(--border-color); font-size: 0.85rem; color: var(--text-muted); line-height: 1.8; display: flex; justify-content: space-between; align-items: center; }
+        .footer-contact { text-align: right; }
+        .footer-contact a { color: var(--text-muted); text-decoration: none; transition: color 0.3s; }
+        .footer-contact a:hover { color: var(--accent-color); }
+
+        /* BOTÓN FLOTANTE DE CONTACTO (Preparado para WhatsApp futuro) */
+        .floating-cta {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background-color: var(--accent-color);
+            color: var(--bg-color);
+            padding: 1rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 10px 25px rgba(255,255,255,0.15);
+            transition: all 0.3s;
+            z-index: 999;
             display: flex;
-            justify-content: space-between;
             align-items: center;
+            gap: 0.5rem;
         }
-        
-        .footer-contact {
-            text-align: right;
-        }
-        
+        .floating-cta:hover { transform: translateY(-3px); box-shadow: 0 15px 35px rgba(255,255,255,0.25); }
+
         /* RESPONSIVE */
         @media (max-width: 1024px) {
-            nav { 
-                width: 250px; 
-                padding: 2rem 1.5rem;
-            }
-            main { 
-                margin-left: 250px; 
-                padding: 4rem 3rem; 
-            }
-            h1 { 
-                font-size: 2.5rem; 
-            }
+            nav { width: 250px; padding: 2rem 1.5rem; }
+            main { margin-left: 250px; padding: 4rem 3rem; }
+            h1 { font-size: 2.5rem; }
         }
-        
         @media (max-width: 768px) {
-            body { 
-                flex-direction: column; 
-            }
-            nav { 
-                width: 100%; 
-                height: auto; 
-                position: relative; 
-                padding: 2rem;
-                border-right: none;
-                border-bottom: 1px solid var(--border-color);
-            }
-            nav ul { 
-                margin-top: 2rem; 
-                margin-bottom: 2rem;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 0.5rem;
-            }
-            nav ul li {
-                margin-bottom: 0;
-            }
-            main { 
-                margin-left: 0; 
-                padding: 3rem 2rem; 
-            }
-            h1 { 
-                font-size: 2rem; 
-            }
-            h2 {
-                font-size: 1.6rem;
-            }
-            .step-item {
-                flex-direction: column;
-            }
-            .step-number {
-                margin-right: 0;
-                margin-bottom: 1rem;
-                font-size: 2.5rem;
-            }
-            footer {
-                flex-direction: column;
-                text-align: center;
-                gap: 1rem;
-            }
-            .footer-contact {
-                text-align: center;
-            }
+            body { flex-direction: column; }
+            nav { width: 100%; height: auto; position: relative; padding: 2rem; border-right: none; border-bottom: 1px solid var(--border-color); }
+            nav ul { margin-top: 2rem; margin-bottom: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+            nav ul li { margin-bottom: 0; }
+            main { margin-left: 0; padding: 3rem 2rem; }
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.6rem; }
+            .step-item { flex-direction: column; }
+            .step-number { margin-right: 0; margin-bottom: 1rem; font-size: 2.5rem; }
+            footer { flex-direction: column; text-align: center; gap: 1.5rem; }
+            .footer-contact { text-align: center; }
+            .floating-cta { bottom: 1.5rem; right: 1.5rem; padding: 0.8rem 1.2rem; font-size: 0.8rem; }
         }
-        
         @media (max-width: 480px) {
-            nav ul {
-                grid-template-columns: 1fr;
-            }
-            main {
-                padding: 2rem 1.5rem;
-            }
-            .products-grid {
-                grid-template-columns: 1fr;
-            }
+            nav ul { grid-template-columns: 1fr; }
+            main { padding: 2rem 1.5rem; }
+            .products-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -397,67 +184,69 @@
             <li><a href="#proceso">04. Proceso</a></li>
         </ul>
         <div class="nav-footer">
-            EST. 2026<br>BUENOS AIRES
+            EST. 2026<br>BUENOS AIRES, ARGENTINA
         </div>
     </nav>
 
     <main>
-        <!-- SECCIÓN 1: INICIO -->
+        <!-- SECCIÓN 1: INICIO (H1 optimizado para SEO) -->
         <section id="inicio">
             <header>
-                <h1>El impacto de la primera impresión.<br>Merchandising corporativo premium.</h1>
-                <div class="subtitle">El merchandising de plástico descartable se tira. En Atepaia diseñamos objetos de origen noble y alta calidad que tus empleados y clientes van a querer conservar todos los días.</div>
-                <a href="https://www.instagram.com/atepaia_merchandansing_premium" target="_blank" class="cta-button">Solicitar Mockup Sin Cargo</a>
+                <h1>Welcome Packs Premium y<br>Merchandising Corporativo en Argentina</h1>
+                <p class="subtitle">El merchandising de plástico descartable se tira. En Atepaia diseñamos <strong>objetos nobles de alta calidad</strong> que tus empleados y clientes van a querer conservar todos los días. Personalización con grabado láser de alta precisión.</p>
+                <a href="https://www.instagram.com/atepaia_merchandansing_premium" target="_blank" rel="noopener noreferrer" class="cta-button">
+                    Solicitar Mockup Sin Cargo
+                </a>
                 
-                <!-- Imagen Principal del Kit -->
-                <img src="KitCompleto.png" alt="Welcome Packs Premium Atepaia - Kit completo de merchandising corporativo" class="hero-image">
+                <!-- Imagen Principal con atributos de rendimiento SEO -->
+                <img src="KitCompleto.png" alt="Welcome packs premium y merchandising corporativo sustentable en Argentina" width="1200" height="600" class="hero-image" loading="eager" decoding="async">
             </header>
         </section>
 
-        <!-- SECCIÓN 2: WHITEPAPER -->
+        <!-- SECCIÓN 2: WHITEPAPER (Contenido rico en palabras clave de cola larga) -->
         <section id="whitepaper">
-            <h2>02. Por qué los Welcome Packs mejoran la retención de talento</h2>
-            <p>Un estudio de cultura corporativa demuestra que el sentido de pertenencia aumenta significativamente cuando el onboarding incluye herramientas de alto valor percibido.</p>
+            <h2>Por qué los Welcome Packs mejoran la retención de talento</h2>
+            <p>La cultura corporativa moderna exige coherencia. Un estudio de mercado demuestra que el sentido de pertenencia aumenta significativamente cuando el <strong>onboarding de empleados</strong> incluye herramientas de alto valor percibido y <strong>políticas sustentables</strong>.</p>
             
             <div class="highlight-box">
-                "El 78% de los empleados considera que un welcome pack de calidad refleja el compromiso de la empresa con su experiencia desde el primer día."
+                "El 78% de los profesionales considera que un kit de bienvenida de calidad refleja el verdadero compromiso de la empresa con su experiencia desde el primer día."
             </div>
             
-            <p>En Atepaia eliminamos el merchandising plástico descartable y lo reemplazamos por objetos nobles: acero inoxidable, madera certificada, cuero genuino y vidrio templado. Cada pieza es personalizada mediante grabado láser de alta precisión, garantizando durabilidad y sofisticación.</p>
+            <p>En Atepaia eliminamos el <strong>merchandising plástico descartable</strong> y lo reemplazamos por objetos nobles: acero inoxidable, madera certificada, cuero genuino y vidrio templado. Cada pieza es personalizada mediante <strong>grabado láser de alta precisión</strong>, garantizando durabilidad, elegancia y una huella de carbono reducida.</p>
             
-            <p>Nuestro modelo on-demand permite que empresas de cualquier tamaño accedan a merchandising premium sin mínimos estrictos ni stock innecesario.</p>
+            <p>Nuestro modelo <strong>on-demand</strong> permite que startups, PYMES y grandes corporaciones de toda la Argentina accedan a merchandising premium sin mínimos estrictos ni stock innecesario.</p>
         </section>
 
         <!-- SECCIÓN 3: SOLUCIONES / PRODUCTOS -->
         <section id="soluciones">
-            <h2>03. Líneas de Diseño Institucional</h2>
-            <p>Cada línea está pensada para diferentes tipos de empresas y culturas organizacionales. Todos los productos admiten personalización con logo mediante grabado láser.</p>
+            <h2>Líneas de Diseño Institucional</h2>
+            <p>Cada línea está pensada para diferentes culturas organizacionales. Todos nuestros productos admiten <strong>personalización con logo mediante grabado láser</strong>, asegurando un acabado profesional y duradero.</p>
             
             <div class="products-grid">
-                <div class="product-card">
-                    <img src="vaso.jpg" alt="Vaso Térmico Premium - Línea Urbana Atepaia" class="product-image">
+                <article class="product-card">
+                    <img src="vaso.jpg" alt="Vaso térmico premium de acero inoxidable para empresas en Argentina" width="400" height="280" class="product-image" loading="lazy" decoding="async">
                     <h3>Línea Térmica Urbana</h3>
-                    <p class="product-description">Acero inoxidable doble pared. Conserva temperatura hasta 12 horas. Ideal para empresas modernas y dinámicas. Disponible en negro mate, acero y blanco.</p>
-                </div>
-                <div class="product-card">
-                    <img src="mate.jpg" alt="Mate Térmico Premium - Línea Identidad Local Atepaia" class="product-image">
+                    <p class="product-description">Acero inoxidable de doble pared. Conserva la temperatura hasta 12 horas. Ideal para empresas modernas y dinámicas. Disponible en negro mate, acero y blanco.</p>
+                </article>
+                <article class="product-card">
+                    <img src="mate.jpg" alt="Mate térmico premium con virola de acero, merchandising con identidad argentina" width="400" height="280" class="product-image" loading="lazy" decoding="async">
                     <h3>Línea Identidad Local</h3>
-                    <p class="product-description">Mate de calabaza curada con virola de acero. Un ícono argentino que conecta con la tradición. Perfecto para empresas que valoran la cultura local.</p>
-                </div>
+                    <p class="product-description">Mate de calabaza curada con virola de acero. Un ícono argentino que conecta con la tradición. Perfecto para empresas que valoran la cultura local y el diseño auténtico.</p>
+                </article>
             </div>
         </section>
 
         <!-- SECCIÓN 4: PROCESO -->
         <section id="proceso">
-            <h2>04. Operación On-Demand</h2>
-            <p>Simplificamos la logística y personalización en tres pasos clave. Sin stock, sin complicaciones, sin mínimos imposibles.</p>
+            <h2>Operación On-Demand en 3 Pasos</h2>
+            <p>Simplificamos la logística y personalización para que no tengas que preocuparte por nada. Sin stock, sin complicaciones, sin mínimos imposibles.</p>
             
             <div class="steps-container">
                 <div class="step-item">
                     <div class="step-number">01</div>
                     <div class="step-content">
                         <h4>Seleccionás los productos</h4>
-                        <p>Elegís de nuestro catálogo o te asesoramos para crear un kit personalizado según tu industria y cultura empresarial.</p>
+                        <p>Elegís de nuestro catálogo o te asesoramos para crear un <strong>kit de bienvenida personalizado</strong> según tu industria y cultura empresarial.</p>
                     </div>
                 </div>
                 
@@ -465,7 +254,7 @@
                     <div class="step-number">02</div>
                     <div class="step-content">
                         <h4>Personalización con grabado láser</h4>
-                        <p>Envías tu logo en formato vectorial. Nosotros lo adaptamos y grabamos con precisión milimétrica en cada pieza.</p>
+                        <p>Envías tu logo en formato vectorial. Nosotros lo adaptamos y grabamos con precisión milimétrica en cada pieza, asegurando un resultado premium.</p>
                     </div>
                 </div>
                 
@@ -473,27 +262,33 @@
                     <div class="step-number">03</div>
                     <div class="step-content">
                         <h4>Entrega en Buenos Aires o todo el país</h4>
-                        <p>Coordinamos la logística de entrega. Tiempos de producción: 7-10 días hábiles desde la aprobación del mockup.</p>
+                        <p>Coordinamos la logística de envío a cualquier punto de Argentina. Tiempos de producción: 7-10 días hábiles desde la aprobación del mockup digital.</p>
                     </div>
                 </div>
             </div>
             
-            <div class="highlight-box" style="margin-top: 3rem;">
-                <strong>Sin mínimos estrictos:</strong> Trabajamos desde 10 unidades. Ideal para startups, PYMES y grandes corporaciones.
+            <div class="highlight-box" style="margin-top: 3rem; text-align: center; border-left: none; border-top: 3px solid var(--accent-color); border-radius: 4px 4px 0 0;">
+                <strong style="color: var(--accent-color); font-style: normal;">Sin mínimos estrictos:</strong> Trabajamos desde 10 unidades. Ideal para startups, PYMES y grandes corporaciones que buscan calidad sobre cantidad.
             </div>
         </section>
 
         <footer>
             <div>
                 <p>&copy; 2026 Atepaia. Todos los derechos reservados.</p>
-                <p style="font-size: 0.8rem; margin-top: 0.5rem;">Merchandising corporativo premium sin plástico descartable.</p>
+                <p style="font-size: 0.8rem; margin-top: 0.5rem; max-width: 400px;">Merchandising corporativo premium y sustentable en Argentina. Eliminamos el plástico descartable.</p>
             </div>
             <div class="footer-contact">
                 <p>Buenos Aires, Argentina</p>
-                <p><a href="https://www.instagram.com/atepaia_merchandansing_premium" target="_blank" style="color: var(--text-muted); text-decoration: none;">@atepaia_merchandansing_premium</a></p>
+                <p><a href="https://www.instagram.com/atepaia_merchandansing_premium" target="_blank" rel="noopener noreferrer">@atepaia_merchandansing_premium</a></p>
             </div>
         </footer>
     </main>
+
+    <!-- BOTÓN FLOTANTE DE CONTACTO (Estrategia CRO) -->
+    <!-- NOTA: Cuando tengas el WhatsApp, solo cambias el href por "https://wa.me/TU_NUMERO" y el texto -->
+    <a href="https://www.instagram.com/atepaia_merchandansing_premium" target="_blank" rel="noopener noreferrer" class="floating-cta" aria-label="Contactar a Atepaia por Instagram">
+        <span>💬</span> Solicitar Cotización
+    </a>
 
 </body>
 </html>
