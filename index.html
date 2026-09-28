@@ -5,14 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atepaia | Regalos Empresariales Premium y Welcome Packs</title>
     <meta name="description" content="Agencia de merchandising corporativo premium on-demand en Buenos Aires. Kits de bienvenida y regalos empresariales personalizados con grabado láser y sin mínimos estrictos.">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #121214;
-            --panel-bg: #1a1a1e;
+            --bg-color: #0b0b0c;
+            --panel-bg: #131316;
             --accent-color: #ffffff;
-            --text-main: #e1e1e6;
-            --text-muted: #a4a4ac;
-            --border-color: #29292e;
+            --accent-muted: #d4d4d8;
+            --text-main: #f4f4f5;
+            --text-muted: #a1a1aa;
+            --border-color: #27272a;
+            --card-bg: #18181b;
         }
 
         * {
@@ -21,130 +26,229 @@
             padding: 0;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             background-color: var(--bg-color);
             color: var(--text-main);
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.7;
             display: flex;
         }
 
-        /* Navegación Lateral Estilo Whitepaper/GitBook */
+        /* Navegación Lateral Sofisticada */
         nav {
-            width: 280px;
+            width: 300px;
             height: 100vh;
             background-color: var(--panel-bg);
             border-right: 1px solid var(--border-color);
             position: fixed;
-            padding: 2rem;
+            padding: 3rem 2rem;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
         }
 
         .logo-area {
-            font-size: 1.5rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            margin-bottom: 3rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: 3px;
             color: var(--accent-color);
             text-transform: uppercase;
-            border: 2px solid var(--accent-color);
-            padding: 0.5rem 1rem;
+            border: 1px solid var(--border-color);
+            padding: 1rem;
             text-align: center;
-            border-radius: 20px;
+            border-radius: 4px;
+            background-color: var(--bg-color);
         }
 
         nav ul {
             list-style: none;
+            margin-top: -5rem;
         }
 
         nav ul li {
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.5rem;
         }
 
         nav ul li a {
             color: var(--text-muted);
             text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.2s;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: block;
+            padding: 0.5rem;
+            border-radius: 4px;
         }
 
         nav ul li a:hover {
             color: var(--accent-color);
+            background-color: var(--card-bg);
+            padding-left: 1rem;
         }
 
-        /* Contenedor Principal */
+        .nav-footer {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-align: center;
+            line-height: 1.4;
+        }
+
+        /* Contenedor Principal Con Aire */
         main {
-            margin-left: 280px;
-            padding: 4rem 6rem;
-            max-width: 1000px;
+            margin-left: 300px;
+            padding: 5rem 8rem;
+            max-width: 1200px;
             width: 100%;
         }
 
         header {
-            margin-bottom: 5rem;
+            margin-bottom: 6rem;
         }
 
         h1 {
-            font-size: 2.8rem;
-            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 600;
             color: var(--accent-color);
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
+            line-height: 1.25;
+            margin-bottom: 2rem;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 2.5rem;
+            max-width: 750px;
+            font-weight: 300;
         }
 
         h2 {
-            font-size: 1.8rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2rem;
+            font-weight: 500;
             color: var(--accent-color);
-            margin-bottom: 1rem;
-            margin-top: 4rem;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            margin-top: 6rem;
         }
 
         p {
             color: var(--text-muted);
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
         }
 
+        /* Caja de Destacado Estilo Editorial */
         .highlight-box {
             background-color: var(--panel-bg);
-            border-left: 4px solid var(--accent-color);
-            padding: 1.5rem;
-            margin: 2rem 0;
-            border-radius: 0 8px 8px 0;
+            border-left: 2px solid var(--accent-color);
+            padding: 2rem;
+            margin: 3rem 0;
+            font-style: italic;
+            font-size: 1.1rem;
+            color: var(--accent-muted);
         }
 
+        /* Botón Premium */
         .cta-button {
             display: inline-block;
             background-color: var(--accent-color);
             color: var(--bg-color);
-            padding: 0.8rem 2rem;
-            font-weight: bold;
+            padding: 1rem 2.5rem;
+            font-weight: 700;
             text-decoration: none;
-            border-radius: 4px;
-            margin-top: 1rem;
-            transition: opacity 0.2s;
+            border-radius: 2px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            transition: all 0.3s;
+            border: 1px solid var(--accent-color);
         }
 
         .cta-button:hover {
-            opacity: 0.9;
+            background-color: transparent;
+            color: var(--accent-color);
+        }
+
+        /* Grilla de Productos/Soluciones */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .product-card {
+            background-color: var(--panel-bg);
+            border: 1px solid var(--border-color);
+            padding: 2.5rem 2rem;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+
+        .product-card:hover {
+            border-color: var(--text-muted);
+        }
+
+        .product-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        /* Pasos Operativos */
+        .steps-container {
+            margin-top: 3rem;
+        }
+
+        .step-item {
+            display: flex;
+            margin-bottom: 2.5rem;
+            background-color: var(--panel-bg);
+            padding: 2rem;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        .step-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            margin-right: 2rem;
+            line-height: 1;
+            opacity: 0.5;
+        }
+
+        .step-content h4 {
+            font-size: 1.15rem;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
         }
 
         footer {
-            margin-top: 6rem;
-            padding-top: 2rem;
+            margin-top: 8rem;
+            padding-top: 3rem;
             border-top: 1px solid var(--border-color);
             font-size: 0.85rem;
             color: var(--text-muted);
+            line-height: 1.8;
         }
 
-        @media (max-width: 768px) {
+        /* Adaptación Mobile */
+        @media (max-width: 992px) {
             body { flex-direction: column; }
-            nav { width: 100%; height: auto; position: relative; }
-            main { margin-left: 0; padding: 2rem; }
-            h1 { font-size: 2rem; }
+            nav { width: 100%; height: auto; position: relative; padding: 2rem; }
+            nav ul { margin-top: 2rem; margin-bottom: 2rem; }
+            main { margin-left: 0; padding: 3rem 2rem; }
+            h1 { font-size: 2.5rem; }
         }
     </style>
 </head>
@@ -158,44 +262,36 @@
             <li><a href="#soluciones">⚔ 03. Líneas de Productos</a></li>
             <li><a href="#proceso">🧊 04. Operación On-Demand</a></li>
         </ul>
+        <div class="nav-footer">
+            EST. 2026<br>BUENOS AIRES
+        </div>
     </nav>
 
     <main>
         <section id="inicio">
             <header>
-                <h1>El impacto de la primera impresión: Merchandising corporativo premium en Buenos Aires.</h1>
-                <p>El merchandising de plástico descartable se tira. En Atepaia diseñamos objetos de origen noble y alta calidad que tus empleados y clientes van a querer conservar todos los días. Producción On-Demand y sin mínimos estrictos.</p>
-                <a href="https://instagram.com" target="_blank" class="cta-button">Solicitar Mockup Digital Sin Cargo</a>
+                <h1>El impacto de la primera impresión:<br>Merchandising corporativo premium.</h1>
+                <div class="subtitle">El merchandising de plástico descartable se tira. En Atepaia diseñamos objetos de origen noble y alta calidad que tus empleados y clientes van a querer conservar todos los días.</div>
+                <a href="https://instagram.com" target="_blank" class="cta-button">Solicitar Mockup Sin Cargo</a>
             </header>
         </section>
 
         <section id="whitepaper">
             <h2>02. Por qué los Welcome Packs mejoran la retención de talento</h2>
-            <p>Un estudio de cultura corporativa demuestra que el sentido de pertenencia aumenta significativamente cuando el onboarding de un nuevo empleado incluye herramientas de trabajo de alto valor percibido. Un vaso térmico que mantiene la temperatura o una agenda de tapa dura texturizada no son regalos; son declaraciones de valor de la empresa hacia su equipo.</p>
+            <p>Un estudio de cultura corporativa demuestra que el sentido de pertenencia aumenta significativamente cuando el onboarding de un nuevo empleado incluye herramientas de trabajo de alto valor percibido. Un vaso térmico que mantiene la temperatura o una agenda de tapa dura texturizada no son regalos sueltos; son declaraciones de valor de la organización hacia su capital humano.</p>
             <div class="highlight-box">
-                <strong>Atepaia elimina el problema de los grandes stocks comerciales.</strong> Nuestro sistema de producción flexible permite a las áreas de Recursos Humanos y Marketing solicitar kits premium bajo demanda, asegurando que cada pieza pase por un control de calidad artesanal mediante grabado láser.
+                "Atepaia elimina por completo el problema del almacenamiento físico y los grandes stocks inmovilizados. Nuestro ecosistema de producción flexible permite a las áreas de Recursos Humanos y Marketing solicitar kits premium bajo demanda, asegurando que cada pieza pase por un control técnico mediante grabado láser de alta resolución."
             </div>
         </section>
 
         <section id="soluciones">
             <h2>03. Líneas de Diseño Institucional</h2>
-            <p><strong>Welcome Packs Ejecutivos:</strong> Termos de acero negro mate, agendas institucionales y calendarios de diseño minimalista.</p>
-            <p><strong>Línea Regional Gourmet:</strong> Tablas de asado premium de madera noble seleccionada y grabada a fuego para acciones de fidelización.</p>
-            <p><strong>Accesorios de Identidad:</strong> Pads de mouse de alta resistencia, textiles corporativos y elementos de branding de alta retención.</p>
-        </section>
-
-        <section id="proceso">
-            <h2>04. Un proceso simple diseñado para directores ocupados</h2>
-            <p><strong>Paso 1: Envío de marca.</strong> Nos compartís el logotipo de tu organización en formato vectorial técnico (.SVG, .AI).</p>
-            <p><strong>Paso 2: Diseño del Mockup.</strong> Generamos una simulación digital hiperrealista del producto aplicado sin cargo comercial.</p>
-            <p><strong>Paso 3: Producción Operativa.</strong> Coordinamos la compra del stock liso y el procesamiento mediante grabado láser de alta precisión.</p>
-            <p><strong>Paso 4: Logística B2B.</strong> Despachamos las órdenes consolidadas directamente a tus oficinas administrativas en CABA o GBA.</p>
-        </section>
-
-        <footer>
-            Atepaia &copy; 2026. Todos los derechos reservados. Soluciones visuales premium para empresas de Buenos Aires, Argentina. Al interactuar con nuestros canales, aceptás nuestras Políticas Generales de Venta (Seña del 60% para inicio de producción y plazos de entrega de 10 a 15 días hábiles).
-        </footer>
-    </main>
-
-</body>
-</html>
+            <p>Estructuras de productos curadas con materiales duraderos y terminación artesanal de precisión:</p>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <h3>Welcome Packs</h3>
+                    <p>Vasos térmicos de acero inoxidable negro mate, agendas corporativas de tapa dura texturizada y calendarios minimalistas en papel kraft.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Línea Regional</h3>
