@@ -38,7 +38,7 @@
             display: flex;
         }
 
-        /* Navegación Lateral Sofisticada */
+        /* Navegación Lateral */
         nav {
             width: 300px;
             height: 100vh;
@@ -98,7 +98,7 @@
             line-height: 1.4;
         }
 
-        /* Contenedor Principal Con Aire */
+        /* Contenedor Principal */
         main {
             margin-left: 300px;
             padding: 5rem 8rem;
@@ -144,7 +144,6 @@
             font-weight: 400;
         }
 
-        /* Caja de Destacado Estilo Editorial */
         .highlight-box {
             background-color: var(--panel-bg);
             border-left: 2px solid var(--accent-color);
@@ -155,7 +154,6 @@
             color: var(--accent-muted);
         }
 
-        /* Botón Premium */
         .cta-button {
             display: inline-block;
             background-color: var(--accent-color);
@@ -176,18 +174,18 @@
             color: var(--accent-color);
         }
 
-        /* Grilla de Productos/Soluciones */
+        /* Grilla de Productos */
         .products-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2.5rem;
             margin-top: 2rem;
         }
 
         .product-card {
             background-color: var(--panel-bg);
             border: 1px solid var(--border-color);
-            padding: 2.5rem 2rem;
+            padding: 2rem;
             border-radius: 4px;
             transition: border-color 0.3s;
         }
@@ -242,7 +240,6 @@
             line-height: 1.8;
         }
 
-        /* Adaptación Mobile */
         @media (max-width: 992px) {
             body { flex-direction: column; }
             nav { width: 100%; height: auto; position: relative; padding: 2rem; }
@@ -272,7 +269,10 @@
             <header>
                 <h1>El impacto de la primera impresión:<br>Merchandising corporativo premium.</h1>
                 <div class="subtitle">El merchandising de plástico descartable se tira. En Atepaia diseñamos objetos de origen noble y alta calidad que tus empleados y clientes van a querer conservar todos los días.</div>
-                <a href="https://instagram.com" target="_blank" class="cta-button">Solicitar Mockup Sin Cargo</a>
+                <a href="https://instagram.com" target="_blank" class="cta-button" style="margin-bottom: 3rem;">Solicitar Mockup Sin Cargo</a>
+                
+                <!-- IMAGEN 1: KIT COMPLETO EN EL HEADER -->
+                <img src="KitCompleto.png" alt="Welcome Packs Premium Atepaia" style="width: 100%; height: auto; border-radius: 4px; border: 1px solid var(--border-color); margin-top: 2rem;">
             </header>
         </section>
 
@@ -290,8 +290,4 @@
             
             <div class="products-grid">
                 <div class="product-card">
-                    <h3>Welcome Packs</h3>
-                    <p>Vasos térmicos de acero inoxidable negro mate, agendas corporativas de tapa dura texturizada y calendarios minimalistas en papel kraft.</p>
-                </div>
-                <div class="product-card">
-                    <h3>Línea Regional</h3>
+                    <!-- IMAGEN 2: VASO TÉRMICO EN LA TARJETA 1 -->
